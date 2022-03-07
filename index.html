@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>RsSchool CV</title>
+</head>
+<body>
+    <div class="wraper">
+        <div class="columns">
+            <div class="column__left">
+                <header class="header">
+                    <img src="img/photo.jpg" alt="">
+                </header>
+                <main class="main">
+                    <section class="contact">
+                        <h2 class="title">Contact information:</h2>
+                        <ul class="contact__list">
+                            <li class="contact__item">
+                                <b>City</b>: Minsk
+                            </li>
+                            <li class="contact__item">
+                                <b>Phone:</b> +375 44 702 02 09
+                            </li>
+                            <li class="contact__item">
+                                <b>Email</b>: ankochetov1996@gmail.com
+                            </li>
+                            <li class="contact__item">
+                                <b>Telegram</b>: @an_kochetov
+                            </li>
+                            <li class="contact__item">
+                                <b>LinkedIn</b>: <a href="https://www.linkedin.com/in/anton-kochetov-by/">Anton</a> 
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skils">
+                        <h2 class="title">Skills</h2>
+                        <ul class="skils__list">
+                            <li class="skils__item">HTML5, CCS3</li>
+                            <li class="skils__item">JavaScript</li>
+                            <li class="skils__item">Git</li>
+                            <li class="skils__item">SCSS</li>
+                            <li class="skils__item">Figma</li>
+                        </ul>
+                    </section>
+                    <section class="languages">
+                        <h2 class="title">Languages</h2>
+                        <ul class="languages__list">
+                            <li class="languages__item"><b>English:</b> A2</li>
+                            <li class="languages__item"><b>Russian:</b> Native</li>
+                        </ul>
+                    </section>
+                </main>
+            </div>
+            <aside class="column__right">
+                <section class="about__me">
+                    <h3>Anton Kochetov</h3>
+                    <h3>Junior Frontend Developer</h3>
+                    <h2 class="title">About me</h2>
+                    <p>My goal is to become a good front-end developer. For a long time I worked as an engineer and was engaged in server configuration, access control systems and video surveillance. Now I am actively studying development in order to achieve my goal.</p>
+                </section>
+                <section class="experience">
+                    <h2 class="title">Experience</h2>
+                    <ul class="experience__list">
+                      <li class="experience__item">
+                        <a class="experience__link" href="https://anton13602.github.io/timet/">
+                            <img src="img//timer.png" alt="GoCorona" class="experience__image">
+                        </a>
+                      </li>
+                      <li class="experience__item">
+                        <a class="experience__link" href="https://anton13602.github.io/Gocorna/">
+                            <img src="img/gocorona.png" alt="GoCorona" class="experience__image">
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                <section class="education">
+                    <h2 class="title">Education</h2>
+                    <p><b>University:</b> BSU</p>
+                    <p><b>Faculty:</b> Radiophysics and computer technologies</p>
+                    <p><b>Years:</b> 2013 - 2019</p>
+                </section>
+                <section class="code">
+                    <h2 class="title">Code examples</h2>
+                    <p><b>altERnaTIng cAsE &lt;=&gt; ALTerNAtiNG CaSe</b>></p>
+                    <p>Define <b>String.prototype.toAlternatingCase</b>> (or a similar function/method such as <b>to_alternating_case/toAlternatingCase/ToAlternatingCase</b> in your selected language; see the initial solution for details) such that each lowercase letter becomes uppercase and each uppercase letter becomes lowercase.</p>
+                    <pre><code class="codewars">
+    String.prototype.toAlternatingCase = function () {
+        let arr = this.split('')
+        let newArr = []
+        for (let i = 0; i &lt; arr.length; i++) {
+            if (arr[i].charCodeAt(0) &lt;= 90 &amp;&amp; arr[i].charCodeAt(0) &gt;= 65) {
+                newArr.push(arr[i].toLowerCase())
+            } else {
+                newArr.push(arr[i].toUpperCase())
+            }
+                }
+                console.log(newArr.join(''))
+                        
+                return newArr.join('')
+        }
+                      </code></pre>
+                </section>
+            </aside>
+        </div>
+        <footer class="footer">
+            <a href="https://github.com/Anton13602" class="footer__github" target="_blank">
+                <img src="img/github_logo.svg" alt="git">
+            </a>
+            <span class="footer__year">2022</span>
+            <a href="https://rs.school/js/" class="footer__course" target="_blank">
+                <img src="img/rs_school_js.svg" alt="RsSchool">
+            </a>
+          </footer>
+    </div>
+</body>
+</html>

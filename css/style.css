@@ -16,8 +16,10 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 /*--------------------*/
 body {
     font-weight: 500;
+    padding: 0px 10px;
 }
 .wraper {
+    padding: 0px 10px;
     overflow: hidden;
     max-width: 1000px;
     margin: 0 auto;
@@ -26,6 +28,7 @@ body {
 .columns {
     display: flex;
 }
+
 .column__left {
     flex: 1 1 30%
 }
@@ -112,6 +115,7 @@ body {
 pre {
     background-color: rgba(209, 202, 202, 0.226);
     border-radius: 10px;
+    padding: 0 0 0 10px;
 }
 
 p {
@@ -138,4 +142,19 @@ p {
 }
 .footer__course img{
     width: 50px;
+}
+
+@media (max-width: 898px) {
+    .columns {
+        display: flex;
+        flex-direction: column;
+    }
+    pre {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        padding: 0px
+    }
+    .column__right {
+        padding: 20px;
+    }
 }

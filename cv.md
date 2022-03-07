@@ -43,3 +43,12 @@ String.prototype.toAlternatingCase = function () {
   return newArr.join('')
 }
 ```
+
+## Education
+* __University__: BSU
+* __Faculty__: Radiophysics and computer technologies
+
+
+## Languages:
+* English: A2
+* Russian - Native
